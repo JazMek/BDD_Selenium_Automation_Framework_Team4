@@ -18,7 +18,7 @@ public class HomePage_StepDefinition extends WebAPI {
 
 
     @Before
-    public void openBrowser() throws IOException { setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.amazon.com/");
+    public void openBrowser() throws IOException { setUp(false, "browserstack", "windows", "10", "chrome", "83", "https://www.amazon.com/");
      }
     @After
     public void closeBrowser() { driver.quit(); }
