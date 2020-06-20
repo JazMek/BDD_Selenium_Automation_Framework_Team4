@@ -10,6 +10,7 @@ import java.io.IOException;
 import static home.AmazonWebElements.*;
 
 public class HomePage extends WebAPI {
+
     public static void SetSignIn(){
         signin.click();
     }

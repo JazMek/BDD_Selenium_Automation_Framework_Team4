@@ -1,4 +1,15 @@
 package step_definitions;
 
-public class HomePage_StepDefinition {
+
+
+import common.WebAPI;
+
+
+public class HomePage_StepDefinition extends WebAPI {
+
+
+
+
+
 }
+

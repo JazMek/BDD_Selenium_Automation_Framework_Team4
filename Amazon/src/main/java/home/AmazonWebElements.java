@@ -8,6 +8,10 @@ public class AmazonWebElements {
 
 
     //    WebElements for Amazon login
+
+    public static final String userNameFieldXP =" //input[@id='ap_email']";
+    @FindBy(how=How.XPATH,using=userNameFieldXP)
+
     public static final String HamburgerMenuXP ="//*[@id='nav-hamburger-menu']/i";
     @FindBy(how= How.XPATH ,using=HamburgerMenuXP)
     public static WebElement HamburgerMenu;
@@ -35,11 +39,12 @@ public class AmazonWebElements {
     public static WebElement signinButton2;
     public static final String userNameFieldCss ="#ap_email";
     @FindBy(how=How.CSS,using=userNameFieldCss)
+
     public static WebElement userNameField;
     public static final String continueButtonXP="//input[@id='continue']";
     @FindBy(how=How.XPATH,using=continueButtonXP)
     public static WebElement continueButton;
-    public static final String passWordFieldXP="//input[@id='ap_password']";
+    public static final String passWordFieldXP=" //input[@id='ap_password']";
     @FindBy(how=How.XPATH,using=passWordFieldXP)
     public static WebElement passWordField;
     public static final String loginButtonID="signInSubmit";
