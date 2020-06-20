@@ -25,14 +25,7 @@ public class AmazonWebElements {
 //loginToAmazon ACHOUR
     public static final String searchBoxCSS ="#twotabsearchtextbox";
     public static final String searchButtonCSS ="#nav-search > form > div.nav-right > div > input";
-
-
-
-
-
-
-
-
+    
     public static final String signinButtonXP="//span[contains(text(),'Hello, Sign in')]";
     @FindBy(how= How.XPATH,using=signinButtonXP)
     public static WebElement signinButton;
