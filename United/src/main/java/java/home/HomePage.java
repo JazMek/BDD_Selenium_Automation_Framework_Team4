@@ -1,4 +1,7 @@
-package home;
+package java.home;
 
 public class HomePage {
+
+
+
 }

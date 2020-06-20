@@ -15,11 +15,11 @@ import org.openqa.selenium.support.PageFactory;
 import java.io.IOException;
 
 public class HomePage_StepDefinition extends WebAPI {
-
-
     @Before
+
     public void openBrowser() throws IOException { setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.amazon.com/");
         init();}
+
     @After
     public void closeBrowser() { driver.quit(); }
     static HomePage homePage;
