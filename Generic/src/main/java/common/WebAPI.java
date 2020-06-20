@@ -1,5 +1,4 @@
 package common;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
@@ -25,29 +24,20 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
-
-
 public class WebAPI {
-
-
     //Browser SetUp
     public static WebDriver driver = null;
-    public String browserstack_username = "mhshahib1";
-    public String browserstack_accesskey = "YA4xsqrMqFurrGduX1X9";
+    public String browserstack_username = "Team4";
+    public String browserstack_accesskey = "";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
-
     @Before
     public  void openBrowser() throws IOException {
         setUp(false,"browserstack","os","x","chrome","83","https://www.amazon.com/");
-
     }
-
-
     public void setUp( boolean useCloudEnv,  String cloudEnvName,
                        String os,  String os_version,  String browserName,
                        String browserVersion,  String url) throws IOException {
-
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName, browserstack_username, browserstack_accesskey, os, os_version, browserName, browserVersion);
@@ -62,7 +52,6 @@ public class WebAPI {
         driver.get(url);
         //driver.manage().window().maximize();
     }
-
     public WebDriver getLocalDriver( String OS, String browserName) {
 
         if (browserName.equalsIgnoreCase("chrome")) {
@@ -95,8 +84,6 @@ public class WebAPI {
         }
         return driver;
     }
-
-
     public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String os_version, String browserName,
                                     String browserVersion) throws IOException {
         DesiredCapabilities cap = new DesiredCapabilities();
@@ -115,13 +102,11 @@ public class WebAPI {
         }
         return driver;
     }
-
     @After
     public void cleanUp() {
         driver.close();
         // driver.quit();
     }
-
     //helper methods
     public void clickOnElement(String locator) {
         try {
@@ -138,7 +123,6 @@ public class WebAPI {
             }
         }
     }
-
     public void typeOnElement(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
@@ -146,7 +130,6 @@ public class WebAPI {
             driver.findElement(By.xpath(locator)).sendKeys(value);
         }
     }
-
     public static void typeOnElementNEnter(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
@@ -165,7 +148,6 @@ public class WebAPI {
             }
         }
     }
-
     public static void typeOnElementNEnter(String locator, String value, WebDriver driver1) {
         try {
             driver1.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
@@ -184,20 +166,16 @@ public class WebAPI {
             }
         }
     }
-
     public void clearField(String locator) {
         driver.findElement(By.id(locator)).clear();
     }
-
     public void navigateBack() {
         driver.navigate().back();
     }
-
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
-        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+        DateFormat df = new SimpleDateFormat("M-d-y"); //(MM.dd.yyyy-HH:mma)
         Date date = new Date();
         df.format(date);
-
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(file,
@@ -206,15 +184,12 @@ public class WebAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot " + e.getMessage());
         }
-
     }
-
     public static String convertToString(String st) {
         String splitString = "";
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
         return splitString;
     }
-
     public static void clickOnElement(String locator, WebDriver driver1) {
         try {
             driver1.findElement(By.cssSelector(locator)).click();
@@ -226,46 +201,36 @@ public class WebAPI {
             }
         }
     }
-
     public void typeOnInputField(String locator, String value) {
         try {
             driver.findElement(By.cssSelector(locator)).sendKeys(value);
         } catch (Exception ex) {
             driver.findElement(By.id(locator)).sendKeys(value);
         }
-
     }
-
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
-
     public void typeByCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
-
     public void typeByCssNEnter(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value, Keys.ENTER);
     }
-
     public void typeByXpath(String locator, String value) {
         driver.findElement(By.xpath(locator)).sendKeys(value);
     }
-
     public void takeEnterKeys(String locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
-
     public void clearInputField(String locator) {
         driver.findElement(By.cssSelector(locator)).clear();
     }
-
     public List<WebElement> getListOfWebElementsById(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.id(locator));
         return list;
     }
-
     public static List<String> getTextFromWebElements(String locator) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
@@ -274,10 +239,8 @@ public class WebAPI {
             String st = web.getText();
             text.add(st);
         }
-
         return text;
     }
-
     public static List<String> getTextFromWebElements(String locator, WebDriver driver1) {
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
@@ -286,56 +249,45 @@ public class WebAPI {
             String st = web.getText();
             text.add(st);
         }
-
         return text;
     }
-
     public static List<WebElement> getListOfWebElementsByCss(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.cssSelector(locator));
         return list;
     }
-
     public static List<WebElement> getListOfWebElementsByCss(String locator, WebDriver driver1) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver1.findElements(By.cssSelector(locator));
         return list;
     }
-
     public List<WebElement> getListOfWebElementsByXpath(String locator) {
         List<WebElement> list = new ArrayList<WebElement>();
         list = driver.findElements(By.xpath(locator));
         return list;
     }
-
     public String getCurrentPageUrl() {
         String url = driver.getCurrentUrl();
         return url;
     }
-
     public void navigateForward() {
         driver.navigate().forward();
     }
-
     public String getTextByCss(String locator) {
         String st = driver.findElement(By.cssSelector(locator)).getText();
         return st;
     }
-
     public String getTextByXpath(String locator) {
         String st = driver.findElement(By.xpath(locator)).getText();
         return st;
     }
-
     public String getTextById(String locator) {
         return driver.findElement(By.id(locator)).getText();
     }
-
     public String getTextByName(String locator) {
         String st = driver.findElement(By.name(locator)).getText();
         return st;
     }
-
     public List<String> getListOfString(List<WebElement> list) {
         List<String> items = new ArrayList<String>();
         for (WebElement element : list) {
@@ -343,16 +295,13 @@ public class WebAPI {
         }
         return items;
     }
-
     public void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
-
     public static void sleepFor(int sec) throws InterruptedException {
         Thread.sleep(sec * 1000);
     }
-
     public void mouseHoverByCSS(String locator) {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -363,11 +312,8 @@ public class WebAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
-
     public void mouseHoverByXpath(String locator) {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
@@ -378,73 +324,58 @@ public class WebAPI {
             WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
-
     //handling Alert
     public void okAlert() {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
-
     public void cancelAlert() {
         Alert alert = driver.switchTo().alert();
         alert.dismiss();
     }
-
     //iFrame Handle
     public void iframeHandle(WebElement element) {
         driver.switchTo().frame(element);
     }
-
     public void goBackToHomeWindow() {
         driver.switchTo().defaultContent();
     }
-
     //get Links
     public void getLinks(String locator) {
         driver.findElement(By.linkText(locator)).findElement(By.tagName("a")).getText();
     }
-
     //Taking Screen shots
     public void takeScreenShot() throws IOException {
         File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         //FileUtils.copyFile(file, new File("screenShots.png"));
     }
-
     //Synchronization
     public void waitUntilClickAble(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
-
     public void waitUntilVisible(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-
     public void waitUntilSelectable(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         boolean element = wait.until(ExpectedConditions.elementToBeSelected(locator));
     }
-
     public void upLoadFile(String locator, String path) {
         driver.findElement(By.cssSelector(locator)).sendKeys(path);
         /* path example to upload a file/image
            path= "C:\\Users\\rrt\\Pictures\\ds1.png";
          */
     }
-
     public void clearInput(String locator) {
         driver.findElement(By.cssSelector(locator)).clear();
     }
-
     public void keysInput(String locator) {
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
-
     //Handling New Tabs
     public static WebDriver handleNewTab(WebDriver driver1) {
         String oldTab = driver1.getWindowHandle();
@@ -453,12 +384,10 @@ public class WebAPI {
         driver1.switchTo().window(newTabs.get(0));
         return driver1;
     }
-
     public static boolean isPopUpWindowDisplayed(WebDriver driver1, String locator) {
         boolean value = driver1.findElement(By.cssSelector(locator)).isDisplayed();
         return value;
     }
-
     public void typeOnInputBox(String locator, String value) {
         try {
             driver.findElement(By.id(locator)).sendKeys(value, Keys.ENTER);
@@ -476,16 +405,12 @@ public class WebAPI {
             System.out.println("CSS locator didn't work");
         }
     }
-
-
     // Customer Made Helper Methods for Amex.com
     public void brokenLink() throws IOException {
         //Step:1-->Get the list of all the links and images
         List<WebElement> linkslist = driver.findElements(By.tagName("a"));
         linkslist.addAll(driver.findElements(By.tagName("img")));
-
         System.out.println("Total number of links and images--------->>> " + linkslist.size());
-
         List<WebElement> activeLinks = new ArrayList<WebElement>();
         //Step:2-->Iterate linksList: exclude all links/images which does not have any href attribute
         for (int i = 0; i < linkslist.size(); i++) {
@@ -495,7 +420,6 @@ public class WebAPI {
             }
         }
         System.out.println("Total number of active links and images-------->>> " + activeLinks.size());
-
         //Step:3--> Check the href url, with http connection api
         for (int j = 0; j < activeLinks.size(); j++) {
 
@@ -507,21 +431,15 @@ public class WebAPI {
             System.out.println(activeLinks.get(j).getAttribute("href") + "--------->>> " + response);
         }
     }
-
     public void inputValueInTextBoxByWebElement(WebElement webElement, String value) {
-
         webElement.sendKeys(value + Keys.ENTER);
-
     }
-
     public void clearInputBox(WebElement webElement) {
         webElement.clear();
     }
-
     public String getTextByWebElement(WebElement webElement) {
         String text = webElement.getText();
         return text;
     }
-
 
 }
