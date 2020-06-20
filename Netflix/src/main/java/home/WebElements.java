@@ -4,10 +4,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
-public class AmazonWebElements {
+public class WebElements {
 
 
-    //    WebElements for Amazon login
+    //    WebElements
     public static final String userNameFieldXP =" //input[@id='ap_email']";
     @FindBy(how=How.XPATH,using=userNameFieldXP)
     public static WebElement userNameField;
