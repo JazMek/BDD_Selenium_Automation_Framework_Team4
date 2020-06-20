@@ -13,7 +13,6 @@ import java.util.Properties;
  */
 
 public class ConnectToSqlDB {
-
     public static Connection connect = null;
     public static Statement statement = null;
     public static PreparedStatement ps = null;
@@ -22,7 +21,8 @@ public class ConnectToSqlDB {
     public static Properties loadProperties() throws IOException {
         Properties prop = new Properties();
         //InputStream ism = new FileInputStream("/secret.properties");
-        InputStream ism = new FileInputStream("../Generic/src/main/secret.properties");
+        //InputStream ism = new FileInputStream("../Generic/src/main/secret.properties");
+        InputStream ism = new FileInputStream("C:\\Users\\lamar\\IdeaProjects\\BDD_Selenium_Automation_Framework_Team4\\Generic\\secret.properties");
         prop.load(ism);
         ism.close();
         return prop;

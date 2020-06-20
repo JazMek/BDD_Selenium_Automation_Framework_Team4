@@ -1,0 +1,118 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-19T08:13:23.406Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2507536000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 121660000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18557000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at Amazon home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 864308000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the signin button",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190505000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter my  correct email",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_enter_my_correct_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 456032000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on continue button",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_continue_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 77403000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter my pass word",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_enter_my_pass_word()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 809449000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the login button I should load in the my Amazon account",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_login_button_I_should_load_in_the_my_Amazon_account()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/HomePage.feature",
+    "tags": []
+  }
+]
