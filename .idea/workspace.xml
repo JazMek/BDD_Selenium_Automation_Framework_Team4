@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70149edd-e4d2-4869-879c-02a900c40d90" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/features/todaysDeals.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/home/TodaysDealPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Amazon/src/main/java/step_definitions/TodaysDeal_StepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking/src/main/java/Home/BookingWebElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking/src/main/java/features/booking.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking/src/main/java/step_definitions/Booking_StepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Booking/src/test/java/runner/testRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Empire/src/main/java/features/MedicairePage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Empire/src/main/java/home/EmpirePageWebElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Empire/src/main/java/step_definitions/MedicairePage_StepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Empire/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Geico/src/main/java/Home/GeicoPageWebElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Geico/src/main/java/features/HomePag.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Geico/src/main/java/step_definitions/Geico_stepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Geico/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/dataBase/Airlines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generic/src/main/java/utility/DataReaderTeam4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Netflix/src/main/java/features/Netflix.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Netflix/src/main/java/home/NetflixPageWebElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Netflix/src/main/java/step_definitions/Netflix_stepDefinion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Netflix/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint/src/main/java/features/dealPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint/src/main/java/home/SprintPageWebElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint/src/main/java/step_definitions/DealPage_StepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sprint/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TD_Bank/src/main/java/features/productsPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TD_Bank/src/main/java/home/TdBankWebElements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TD_Bank/src/main/java/step_definition/Products_stepdefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TD_Bank/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/United/src/main/java/features/UnitedHomePage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/United/src/main/java/home/UnitedAirlinesPageWebElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/United/src/main/java/step_definitions/UnitedHomePage_stepDefinition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/United/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/features/HomePage.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/home/AmazonWebElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/main/java/home/AmazonWebElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/home/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/main/java/step_definitions/HomePage_StepDefinition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/src/test/java/runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/Amazon/src/test/java/runner/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/cucumber-reports/cucumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/cucumber-reports/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/cucumber-reports/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/cucumber-reports/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/cucumber-reports/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amazon/target/cucumber-reports/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Booking/src/main/java/home/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Empire/src/main/java/home/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Geico/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Geico/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Geico/src/main/java/home/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/common/WebAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/common/WebAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Generic/src/main/java/dataBase/ConnectToSqlDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/Generic/src/main/java/dataBase/ConnectToSqlDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netflix/src/main/java/home/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint/src/main/java/home/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="AnnotationType" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dWuDoWUbwCasVlxep54O6KnzCN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Generic/src/main/java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="reporting" />
+      <recent name="step_definitions" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dataBase" />
+      <recent name="utility" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Generic/src/main/java" />
+      <recent name="$PROJECT_DIR$/TD_Bank/src/test/java" />
+      <recent name="$PROJECT_DIR$/United/src/test/java" />
+      <recent name="$PROJECT_DIR$/Netflix/src/test/java" />
+      <recent name="$PROJECT_DIR$/Geico/src/test/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRunner (1)">
+    <configuration name="Feature: UnitedHomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/United/src/main/java/features/UnitedHomePage.feature" />
+      <option name="GLUE" value="step_definition step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="United" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: UnitedHomePage" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: get infos section two" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/United/src/main/java/features/UnitedHomePage.feature" />
+      <option name="GLUE" value="step_definition step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="United" />
+      <option name="NAME_FILTER" value="^get infos section two$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^get infos section two$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: get infos section two" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/United/src/main/java/features/UnitedHomePage.feature" />
+      <option name="GLUE" value="step_definition step_definitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="United" />
+      <option name="NAME_FILTER" value="^$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: " />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="United" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TD_Bank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runner" />
+      <option name="MAIN_CLASS_NAME" value="runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestRunner (1)" />
+        <item itemvalue="Cucumber Java.Scenario: " />
+        <item itemvalue="Cucumber Java.Feature: UnitedHomePage" />
+        <item itemvalue="Cucumber Java.Scenario: get infos section two" />
+        <item itemvalue="JUnit.TestRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70149edd-e4d2-4869-879c-02a900c40d90" name="Default Changelist" comment="" />
+      <created>1592553052377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592553052377</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="159" y="0" key="#Project_Structure" timestamp="1592959879015">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="159" y="0" key="#Project_Structure/0.0.1344.840@0.0.1344.840" timestamp="1592959879015" />
+    <state x="159" y="23" key="#Project_Structure/0.23.1344.766@0.23.1344.766" timestamp="1592554377061" />
+    <state x="342" y="228" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592967879753">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="342" y="228" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1344.840@0.0.1344.840" timestamp="1592967879753" />
+    <state x="170" y="350" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592980001809">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="170" y="350" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1344.840@0.0.1344.840" timestamp="1592980001809" />
+    <state x="409" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592798465558">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="409" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1344.840@0.0.1344.840" timestamp="1592798465558" />
+    <state width="1300" height="224" key="GridCell.Tab.0.bottom" timestamp="1593032507538">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state width="1300" height="224" key="GridCell.Tab.0.bottom/0.0.1344.840@0.0.1344.840" timestamp="1593032507538" />
+    <state width="1300" height="192" key="GridCell.Tab.0.bottom/0.23.1344.765@0.23.1344.765" timestamp="1592558828637" />
+    <state width="1300" height="193" key="GridCell.Tab.0.bottom/0.23.1344.766@0.23.1344.766" timestamp="1592554826685" />
+    <state width="1300" height="224" key="GridCell.Tab.0.center" timestamp="1593032507537">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state width="1300" height="224" key="GridCell.Tab.0.center/0.0.1344.840@0.0.1344.840" timestamp="1593032507537" />
+    <state width="1300" height="192" key="GridCell.Tab.0.center/0.23.1344.765@0.23.1344.765" timestamp="1592558828636" />
+    <state width="1300" height="193" key="GridCell.Tab.0.center/0.23.1344.766@0.23.1344.766" timestamp="1592554826685" />
+    <state width="1300" height="224" key="GridCell.Tab.0.left" timestamp="1593032507537">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state width="1300" height="224" key="GridCell.Tab.0.left/0.0.1344.840@0.0.1344.840" timestamp="1593032507537" />
+    <state width="1300" height="192" key="GridCell.Tab.0.left/0.23.1344.765@0.23.1344.765" timestamp="1592558828636" />
+    <state width="1300" height="193" key="GridCell.Tab.0.left/0.23.1344.766@0.23.1344.766" timestamp="1592554826684" />
+    <state width="1300" height="224" key="GridCell.Tab.0.right" timestamp="1593032507538">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state width="1300" height="224" key="GridCell.Tab.0.right/0.0.1344.840@0.0.1344.840" timestamp="1593032507538" />
+    <state width="1300" height="192" key="GridCell.Tab.0.right/0.23.1344.765@0.23.1344.765" timestamp="1592558828637" />
+    <state width="1300" height="193" key="GridCell.Tab.0.right/0.23.1344.766@0.23.1344.766" timestamp="1592554826685" />
+    <state x="209" y="81" key="Maven.ArtifactSearchDialog" timestamp="1592959605504">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="209" y="81" key="Maven.ArtifactSearchDialog/0.0.1344.840@0.0.1344.840" timestamp="1592959605504" />
+    <state x="172" y="59" key="SettingsEditor" timestamp="1592959015162">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="172" y="59" key="SettingsEditor/0.0.1344.840@0.0.1344.840" timestamp="1592959015162" />
+    <state x="711" y="118" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1592855291205">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="711" y="118" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1344.840@0.0.1344.840" timestamp="1592855291205" />
+    <state x="376" y="192" key="refactoring.ChangeSignatureDialog" timestamp="1592959439011">
+      <screen x="0" y="0" width="1344" height="840" />
+    </state>
+    <state x="376" y="192" key="refactoring.ChangeSignatureDialog/0.0.1344.840@0.0.1344.840" timestamp="1592959439011" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BDD_Selenium_Automation_Framework_Team4$Scenario__login_to_Amazon_and_open_todays_deal_page.ic" NAME="Scenario: login to Amazon and open todays deal page Coverage Results" MODIFIED="1592857461845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
+  </component>
+</project>

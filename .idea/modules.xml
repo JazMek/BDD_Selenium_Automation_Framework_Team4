@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Amazon/Amazon.iml" filepath="$PROJECT_DIR$/Amazon/Amazon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BDD_Selenium_Automation_Framework_Team4.iml" filepath="$PROJECT_DIR$/BDD_Selenium_Automation_Framework_Team4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Booking/Booking.iml" filepath="$PROJECT_DIR$/Booking/Booking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Empire/Empire.iml" filepath="$PROJECT_DIR$/Empire/Empire.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Geico/Geico.iml" filepath="$PROJECT_DIR$/Geico/Geico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Generic/Generic.iml" filepath="$PROJECT_DIR$/Generic/Generic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Netflix/Netflix.iml" filepath="$PROJECT_DIR$/Netflix/Netflix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sprint/Sprint.iml" filepath="$PROJECT_DIR$/Sprint/Sprint.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TD_Bank/TD_Bank.iml" filepath="$PROJECT_DIR$/TD_Bank/TD_Bank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/United/United.iml" filepath="$PROJECT_DIR$/United/United.iml" />
+    </modules>
+  </component>
+</project>
