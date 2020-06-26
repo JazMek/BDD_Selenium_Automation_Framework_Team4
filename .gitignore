@@ -7,15 +7,12 @@
  *.class
  # Log file
  *.log
- TeamOrganigram.txt
- Selenium_Automation_Framework_Team4.iml
  # BlueJ files
  *.ctxt
  # Mobile Tools for Java (J2ME)
  .mtj.tmp/
  # Package Files #
  *.xml
- target
  *.war
  *.nar
  *.ear
