@@ -95,7 +95,6 @@ public class ConnectToSqlDB {
                 ps.setInt(1,ArrayData[n]);
                 ps.executeUpdate();
             }
-
         } catch (IOException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -120,7 +119,6 @@ public class ConnectToSqlDB {
             e.printStackTrace();
         }
     }
-
     public List<String> directDatabaseQueryExecute(String passQuery, String dataColumn)throws Exception {
         List<String> data = new ArrayList<String>();
 
@@ -208,7 +206,7 @@ public class ConnectToSqlDB {
         User user = null;
         try{
             Connection conn = connectToSqlDatabase();
-            String query = "SELECT * FROM Students";
+            String query = "SELECT * FROM Sprintitems";
             // create the java statement
             Statement st = conn.createStatement();
             // execute the query, and get a java resultset
@@ -216,13 +214,14 @@ public class ConnectToSqlDB {
             // iterate through the java resultset
             while (rs.next())
             {
-                String name = rs.getString("stName");
-                String id = rs.getString("stID");
-                String dob = rs.getString("stDOB");
+                String it =rs.getString("item");
+//                String name = rs.getString("stName");
+//                String id = rs.getString("stID");
+//                String dob = rs.getString("stDOB");
                 //System.out.format("%s, %s\n", name, id);
-                user = new User(name,id, dob);
+               // user = new User(name,id, dob);
+                user = new User(it);
                 list.add(user);
-
             }
             st.close();
         }catch (Exception e){
@@ -235,7 +234,8 @@ public class ConnectToSqlDB {
     public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
         List<User> list = readUserProfileFromSqlTable();
         for(User user:list){
-            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
+//            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
+            System.out.println(user.getItem());
         }
     }
 }

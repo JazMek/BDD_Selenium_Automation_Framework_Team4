@@ -4,7 +4,7 @@ public class User {
     String stName;
     String stID;
     String stDOB;
-
+    String item;
     public User(){}
     public User(String stName, String stID){
         this.stName = stName;
@@ -39,4 +39,15 @@ public class User {
     public void setStDOB(String stDOB) {
         this.stDOB = stDOB;
     }
+    public String getItem() {
+        return item;
+    }
+    public void setItem(String item) {
+        this.item = item;
+    }
+
+    public User(String item) {
+        this.item = item;
+    }
+
 }

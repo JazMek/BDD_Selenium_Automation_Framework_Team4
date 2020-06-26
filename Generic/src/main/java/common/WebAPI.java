@@ -1,6 +1,7 @@
 package common;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -441,5 +442,111 @@ public class WebAPI {
         String text = webElement.getText();
         return text;
     }
+    //*************    team's new methods   ************************************************************8
+    // method to hover mouse and click
+    public static void HoverMouseAndClick(WebDriver driver, WebElement element) {
+        Actions action= new Actions(driver);
+        action.moveToElement(element).perform();
+    }
+    //Assert method to get title
+    public static void getTitle(String expectedTitle){
+        String title=driver.getTitle();
+        Assert.assertEquals(title ,expectedTitle,"title doesn't match");
+        System.out.println(title);
+    }
+    //Assert method to get url
+    public static void getUrl(String expectedUrl){
+        String url=driver.getCurrentUrl();
+        Assert.assertEquals(url,expectedUrl,"Url doesn't match");
+        System.out.println(url);
+    }
+    //windows setup
+    public static void setUpWindow(){
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+    }
+    // Minimize the browser
+    //driver.manage().window().setPosition(new Point(0, -1000));
+    //Set Size of browser
+    //driver.manage().window().setSize(new Dimension(1920, 1080));
+
+    // Get Page Source: This command is used to get the source code of the web page. It returns a string.
+    public static void GetPageSource(){
+        //driver.getPageSource();  or
+        String sourceCode = driver.getPageSource();
+    }
+    // Navigate Forward
+    public static void NavigateForward(){
+        driver.navigate().forward();
+    }
+    //Refresh Page
+    public static void RefreshPage(){
+        driver.navigate().refresh();
+    }
+    //Navigate Directly To a specific URL
+    public static void NavigateDirectlyToURL(){
+        driver.navigate().to("https://www.netflix.com");
+        //driver.navigate().to("https://www.amazon.com");
+    }
+//scroll Page down to the end
+public static void scrollPageDown(WebDriver driver){
+    JavascriptExecutor js=((JavascriptExecutor) driver);
+    js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+}
+    //scroll Page down to the view element
+//WebElement element = driver.findElement(By.xpath());
+    public static void scrollIntoView(WebElement element, WebDriver driver){
+        JavascriptExecutor js=((JavascriptExecutor) driver);
+        js.executeScript("arguments[0].scrollIntoView(true)",element);
+    }
+    //method Scroll Up
+    public static void Page_Scroll_Up(WebDriver driver) {
+        Actions actions = new Actions(driver);
+// Scroll Up using Actions class
+        actions.keyDown(Keys.CONTROL).sendKeys(Keys.HOME).perform(); }
+
+    //method Scroll Down
+    public static void Page_Scroll_Down(WebDriver driver) {
+        Actions actions = new Actions(driver);
+// Scroll Down using Actions class
+        actions.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform(); }
+
+    //method Scroll Down
+    public static void PageScrollDown(WebDriver driver) {
+        Actions actions = new Actions(driver);
+// Scroll Down using Actions class
+        actions.keyDown(Keys.CONTROL).sendKeys(Keys.END).perform(); }
+
+    //method Scroll Down to The webElement
+    public static void Page_Scroll_DownToElement(WebElement element) {
+        Actions actions = new Actions(driver);
+// Scroll Down using Actions class
+        actions.keyDown(Keys.CONTROL).moveToElement(element).click(); }
+
+    //method Scroll left Or Right to The webElement
+    public static void PageScrollToElement(WebElement element) {
+        Actions actions = new Actions(driver);
+// Scroll Down using Actions class
+        actions.moveToElement(element).click(); }
+    //**** LAMARAs Check Broken Links  ******************
+    public void Check_brokenLink() throws IOException, InterruptedException {
+        brokenLink();
+    }
+    //***** Method to get PageLinksList ***************
+    public static List<WebElement> PageLinksList(WebDriver driver){
+        List<WebElement> linkslist = driver.findElements(By.tagName("a"));
+        linkslist.addAll(driver.findElements(By.tagName("img")));
+        System.out.println("Total number of links and images---->>> " + "links list size is"+"  " + linkslist.size());
+        for (int i = 0; i < linkslist.size(); i++) {
+            System.out.println(linkslist.get(i).getText());
+            System.out.println(linkslist.get(i).getAttribute("href"));
+        }
+        return linkslist;
+    }
+    // navigatBackWindow
+    public static void navigatebackWindow() {
+        driver.navigate().back();
+    }
+
 
 }
