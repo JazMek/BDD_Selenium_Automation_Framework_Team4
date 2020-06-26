@@ -15,7 +15,6 @@ public class DataReader2 {
     public static  Cell cell = null;
     public static  FileOutputStream fio = null;
     public static  int numberOfRows, numberOfCol, rowNum;
-
 //    public String[][] fileReader1(String path,int sheetIndex) throws IOException {
 //        String[][] data = {};
 //        File file = new File(path);
@@ -25,7 +24,6 @@ public class DataReader2 {
 //        numberOfRows = sheet.getLastRowNum();
 //        numberOfCol = sheet.getRow(0).getLastCellNum();
 //        data = new String[numberOfRows + 1][numberOfCol + 1];
-//
 //        for (int i = 1; i < data.length; i++) {
 //            HSSFRow rows = sheet.getRow(i);
 //            for (int j = 0; j < numberOfCol; j++) {
@@ -36,7 +34,6 @@ public class DataReader2 {
 //        }
 //        return data;
 //    }
-
 //    public static String[] fileReader2(String path, int sheetIndex) throws IOException {
 //        String[] data = {};
 //        File file = new File(path);
@@ -46,9 +43,7 @@ public class DataReader2 {
 //        numberOfRows = sheet.getLastRowNum();
 //        numberOfCol = sheet.getRow(0).getLastCellNum();
 //        data = new String[numberOfRows + 1];
-//
 //        for (int i = 1; i < data.length; i++) {
-//
 //            HSSFRow rows = sheet.getRow(i);
 //            for (int j = 0; j < numberOfCol; j++) {
 //                HSSFCell cell = rows.getCell(j);
@@ -58,10 +53,8 @@ public class DataReader2 {
 //        }
 //        return data;
 //    }
-
 //    public static String getCellValue(HSSFCell cell) {
 //        Object value = null;
-//
 //        int dataType = cell.getCellType();
 //        switch (dataType) {
 //            case HSSFCell.CELL_TYPE_NUMERIC:
@@ -75,15 +68,12 @@ public class DataReader2 {
 //                break;
 //        }
 //        return value.toString();
-//
 //    }
-
     public void writeBack(String value) throws IOException {
         wb = new HSSFWorkbook();
         sheet = wb.createSheet();
         Row row = sheet.createRow(rowNum);
         row.setHeightInPoints(10);
-
         fio = new FileOutputStream(new File("ExcelFile.xls"));
         wb.write(fio);
         for (int i = 0; i < row.getLastCellNum(); i++) {

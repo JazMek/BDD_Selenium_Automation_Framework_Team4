@@ -14,14 +14,17 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
+
 import static home.AmazonWebElements.*;
+
 
 public class HomePage_StepDefinition extends WebAPI {
     @Before
 
-    public void openBrowser() throws IOException { setUp(false, "browserstack", "windows", "10", "chrome", "83", "https://www.amazon.com/");
-    init();
-    }
+    public void openBrowser() throws IOException { setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.amazon.com/");
+        init();}
+
+
     @After
     public void closeBrowser() { driver.quit(); }
 
@@ -35,6 +38,7 @@ public class HomePage_StepDefinition extends WebAPI {
     @Given("I am at Amazon home page")
     public void i_am_at_Amazon_home_page() {
 
+
     }
     @When("I click on the signin button")
     public void i_click_on_the_signin_button() {
@@ -46,11 +50,28 @@ public class HomePage_StepDefinition extends WebAPI {
         //init();
        //homePage.setUserNameField();
         userNameField.sendKeys("team4WDNY2020@gmail.com");
+
+    }
+    @When("I click on the signin button")
+    public void i_click_on_the_signin_button() {
+
+        homePage.SetSignIn();
+    }
+
+    @When("I enter my  correct email")
+    public void i_enter_my_correct_email() {
+
+        homePage.setUserNameField();
+
     }
 
     @Then("I click on continue button")
     public void i_click_on_continue_button() {
+
        // init();
+
+
+
 
       //  homePage.setContinueButton();
         continueButton.click();
@@ -58,7 +79,10 @@ public class HomePage_StepDefinition extends WebAPI {
 
     @Then("I enter my pass word")
     public void i_enter_my_pass_word() {
+
        // init();
+
+
 
         //homePage.setPassWordField();
         passWordField.sendKeys("Team42020");
@@ -66,6 +90,7 @@ public class HomePage_StepDefinition extends WebAPI {
 
     @Then("I click on the login button I should load in the my Amazon account")
     public void i_click_on_the_login_button_I_should_load_in_the_my_Amazon_account() {
+
         //init();
        // homePage.setLoginButton();
         loginButton.click();
@@ -125,6 +150,10 @@ homePage.click_on_search_button();
     public void i_enter_items_in_search_box_i_should_get_result() throws InterruptedException {
 
         homePage.enterDataToSearchBox();
+
+
+
+        homePage.setLoginButton();
 
     }
 
