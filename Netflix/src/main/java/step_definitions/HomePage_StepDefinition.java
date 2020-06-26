@@ -1,7 +1,6 @@
 package step_definitions;
-
-
 import common.WebAPI;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -12,6 +11,8 @@ import java.io.IOException;
 
 import static home.HomePage.homePage;
 import static home.HomePage.init;
+
+public class HomePage_StepDefinition extends WebAPI {
 
 
 public class HomePage_StepDefinition extends WebAPI {
@@ -51,3 +52,4 @@ public class HomePage_StepDefinition extends WebAPI {
 
 
 }
+

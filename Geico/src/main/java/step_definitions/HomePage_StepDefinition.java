@@ -1,7 +1,6 @@
 package step_definitions;
-
-
 import common.WebAPI;
+
 import home.HomePage;
 import home.WebElements;
 import io.cucumber.java.After;
@@ -11,6 +10,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
+
 
 public class HomePage_StepDefinition extends WebAPI {
 
@@ -53,3 +53,4 @@ public class HomePage_StepDefinition extends WebAPI {
 
 
 }
+

@@ -1,6 +1,7 @@
 package home;
 
 import common.WebAPI;
+
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
@@ -24,4 +25,24 @@ public class HomePage extends WebAPI {
         String ActuaalUrl=getTextByWebElement(TextExpected);
         Assert.assertEquals(ExpectedUrl,ActuaalUrl);
     }
+
+
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+public class HomePage extends WebAPI {
+
+
+    // method for page broken links
+    public void CheckBrokenLink() throws IOException {
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        brokenLink();
+    }
+
+
+
+
+
+
+
 }

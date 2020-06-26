@@ -1,5 +1,4 @@
 package runner;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -7,15 +6,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/main/java/features/HomePage.feature"},
-        glue = "step_definitions",
+        glue = {"step_definitions"},
         plugin ={"pretty","json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports"},
-        strict=true,
+        strict=false,
         monochrome=true,
         dryRun=false,
         tags=""
-
-
-
 // tags = " (@SmokeTest or @Regression) and not @pending"
 // tags = "(@SmokeTest or @Regression) and (not @pending)"
 // tags = {"@SmokeTest or @Regression and not @pending"}

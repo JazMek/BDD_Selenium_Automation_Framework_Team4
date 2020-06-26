@@ -1,5 +1,7 @@
 package dataBase;
 
+import org.openqa.selenium.By;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +15,6 @@ import java.util.Properties;
  */
 
 public class ConnectToSqlDB {
-
     public static Connection connect = null;
     public static Statement statement = null;
     public static PreparedStatement ps = null;
@@ -22,7 +23,15 @@ public class ConnectToSqlDB {
     public static Properties loadProperties() throws IOException {
         Properties prop = new Properties();
         //InputStream ism = new FileInputStream("/secret.properties");
+
         InputStream ism = new FileInputStream("/Users/karimmekdoud/IdeaProjects/Selenium_Automation_Framework_Team4/Generic/src/main/java/secret.properties");
+
+
+        InputStream ism = new FileInputStream("C:\\Users\\ssbra\\IdeaProjects\\BDD_Selenium_Automation_Framework_Team4\\Generic\\secret.properties");
+
+        //InputStream ism = new FileInputStream("../Generic/src/main/secret.properties");
+        InputStream ism = new FileInputStream("C:\\Users\\lamar\\IdeaProjects\\BDD_Selenium_Automation_Framework_Team4\\Generic\\secret.properties");
+
         prop.load(ism);
         ism.close();
         return prop;
@@ -208,7 +217,7 @@ public class ConnectToSqlDB {
         User user = null;
         try{
             Connection conn = connectToSqlDatabase();
-            String query = "SELECT * FROM Students";
+            String query = "SELECT * FROM  sprintsearchitem";
             // create the java statement
             Statement st = conn.createStatement();
             // execute the query, and get a java resultset
@@ -216,11 +225,12 @@ public class ConnectToSqlDB {
             // iterate through the java resultset
             while (rs.next())
             {
-                String name = rs.getString("stName");
-                String id = rs.getString("stID");
-                String dob = rs.getString("stDOB");
+//                String name = rs.getString("stName");
+//                String id = rs.getString("stID");
+//                String dob = rs.getString("stDOB");
+                String itm = rs.getString("item");
                 //System.out.format("%s, %s\n", name, id);
-                user = new User(name,id, dob);
+                user = new User(itm);
                 list.add(user);
 
             }
@@ -311,4 +321,7 @@ public class ConnectToSqlDB {
             System.out.println(user.getFrom() + " " + user.getTo()+ " " + user.getMonth()+ " " + user.getAdults() + " " + user.getSeniors()+ " " + user.getChildren1()+ " " + user.getChildren2());
         }
     }
+
+
+
 }

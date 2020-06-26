@@ -6,7 +6,6 @@ import org.openqa.selenium.support.How;
 
 public class BookingWebElements {
 
-
     //*************** Login to https://www.booking.com/ ***********************************************
     public static final String signinButtonXP="//*[@id='b_tt_holder_4']/div/span";
     public static final String signinButton2CSS= "#b2indexPage > div.fly-dropdown.fly-dropdown--onload-shower.fly-dropdown_bottom.fly-dropdown_arrow-right > div > div.header-signin-prompt__body > a > span";
@@ -32,6 +31,7 @@ public class BookingWebElements {
     public static WebElement loginButton;
     @FindBy(how= How.XPATH,using=gettexteXP)
     public static WebElement gettexte;
+
     //click on register
     public static final String registerToBookingCSS="#b_tt_holder_1 > div > span";
     @FindBy(how= How.CSS,using=registerToBookingCSS)
@@ -55,7 +55,7 @@ public class BookingWebElements {
     public static final String reEnterPasswordCSS="#confirmed_password";
     @FindBy(how= How.CSS,using=reEnterPasswordCSS)
     public static WebElement reEnterPassword;
-    //click on create account button
+
     public static final String clickCreateAccountCSS="#root > div > div.access-container.bui_font_body > div > div.access-panel.bui-spacer--large.box-shadow.nw-access-panel > div.transition-container > div > div > div > form > button > span";
     @FindBy(how= How.CSS,using=clickCreateAccountCSS)
     public static WebElement clickCreateAccount;
@@ -63,5 +63,6 @@ public class BookingWebElements {
     public static final String registerPageCheckXPATH="//*[@id='profile-menu-trigger--content']/span/span[1]";
     @FindBy(how= How.XPATH,using=registerPageCheckXPATH)
     public static WebElement registerPageCheck;
+
 
 }

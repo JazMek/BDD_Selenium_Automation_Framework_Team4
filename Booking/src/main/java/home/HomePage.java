@@ -9,6 +9,21 @@ import static home.BookingWebElements.*;
 
 public class HomePage extends WebAPI {
 
+    public void click_on_the_signin_button() {
+        signinButton2.click();
+    }
+    public void enter_my_correct_email() {
+        emailField.sendKeys("team4WDNY2020@gmail.com");
+    }
+    public void click_on_next_button_button() {
+        nextButton.click();
+    }
+    public void enter_my_pass_word() {
+        passWordField.sendKeys("Team42020");
+    }
+    public void click_on_the_login_button_I_should_load_in_my_booking_account() {
+        loginButton.click();
+    }
 
     // method for page broken links
     public void CheckBrokenLink() throws IOException {
@@ -22,7 +37,7 @@ public class HomePage extends WebAPI {
 
 
     }
-    // step2 signUp click
+
     public void click_on_signUp_button() {
         signUp.click();
 
@@ -54,3 +69,4 @@ public class HomePage extends WebAPI {
 
     }
 }
+

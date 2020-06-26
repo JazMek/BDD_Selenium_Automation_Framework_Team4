@@ -5,7 +5,23 @@ public class User {
     String stID;
     String stDOB;
 
+    public String getItem() {
+        return item;
+    }
+
+    public void setItem(String item) {
+        this.item = item;
+    }
+
+    String item;
     public User(){}
+
+
+    public User(String item) {
+        this.item = item;
+    }
+
+
     public User(String stName, String stID){
         this.stName = stName;
         this.stID = stID;
