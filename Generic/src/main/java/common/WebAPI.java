@@ -34,6 +34,9 @@ public class WebAPI {
     @Before
     public  void openBrowser() throws IOException {
 
+        setUp(false,"browserstack","windows","10","chrome","83","https://www.booking.com/");
+
+
 
 
         setUp(false,"browserstack","os","x","chrome","83","https://www.amazon.com/");
@@ -445,5 +448,23 @@ public class WebAPI {
         String text = webElement.getText();
         return text;
     }
+
+    //***** Method to get Page Links List ***************
+    public static List<WebElement> PageLinksList(WebDriver driver){
+        List<WebElement> linkslist = driver.findElements(By.tagName("a"));
+        linkslist.addAll(driver.findElements(By.tagName("img")));
+        System.out.println("Total number of links and images--------->>> " + linkslist.size());
+        for (int i = 0; i < linkslist.size(); i++) {
+            System.out.println(linkslist.get(i).getText());
+            System.out.println(linkslist.get(i).getAttribute("href"));
+        }
+        return linkslist;
+    }
+   // navigatBackWindow
+    public void navigatebackWindow() {
+        driver.navigate().back();
+    }
+
+
 
 }

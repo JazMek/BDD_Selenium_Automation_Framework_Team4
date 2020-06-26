@@ -140,6 +140,13 @@
         <artifactId>poi</artifactId>
         <version>4.1.2</version>
     </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.20</version>
+        </dependency>
+
     </dependencies>
 <!--    </dependencyManagement>-->
 
