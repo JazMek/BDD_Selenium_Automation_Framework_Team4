@@ -1,5 +1,4 @@
 package step_Definitions;
-
 import common.WebAPI;
 import home.BookingWebElements;
 import home.HomePage;
@@ -9,11 +8,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.support.PageFactory;
-
 import java.io.IOException;
-
 public class Homepage_StepDefinition extends WebAPI {
-
 @Before
 public void openBrowser() throws IOException { setUp(false, "browserstack", "windows", "10", "chrome", "83", "https://www.booking.com/");
     init();
@@ -102,14 +98,4 @@ homePage.reenter_password_data_in_text_box();
     public void i_should_create_a_new_account_by_clicking_enter_button() {
 homePage.should_create_a_new_account_by_clicking_enter_button();
     }
-
-
-
-
-
-
-
-
-
-
 }
