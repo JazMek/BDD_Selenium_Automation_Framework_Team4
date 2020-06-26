@@ -1,0 +1,106 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-24T21:01:16.302Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3760035000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 54,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 119955000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13535000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I am at Amazon home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 273295000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "I click on Find Gift button I should see the page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Find_Gift_button_I_should_see_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1352357000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "I click on Preschooler the page should display properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Preschooler_the_page_should_display_properly()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2554976000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "I click on Play Dol",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Play_Dol()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 83029000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "I click on the Play Dol Add To The Card should Add it properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_Play_Dol_Add_To_The_Card_should_Add_it_properly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/HomePage.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,446 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-24T02:04:10.285Z",
+        "before": [
+          {
+            "result": {
+              "duration": 27981360000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 89656000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 858000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at Empire home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Empire_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 116322000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the Individual And Family button a Page should dropdown",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_Individual_And_Family_button_a_Page_should_dropdown()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T02:04:38.545Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5550996000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 88422000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 402000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am at Empire home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Empire_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26001000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the page should scrolldown to view element wich is Language",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.the_page_should_scrolldown_to_view_element_wich_is_Language()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 185870000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I click on Language button it should dropdown propprly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Language_button_it_should_dropdown_propprly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I click on chineese the page should be translated",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T02:04:44.413Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8203151000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 88967000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 432000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I am at Empire home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Empire_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 147611000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on the Individual And Family button a Page should dropdown",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_Individual_And_Family_button_a_Page_should_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166781000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I click on HealthInsurance the page should display properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_HealthInsurance_the_page_should_display_properly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6535000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the HealthInsurance page should scrolldown to the end of the page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.the_HealthInsurance_page_should_scrolldown_to_the_end_of_the_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T02:04:53.035Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7085995000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 86780000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 392000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I am at Empire home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Empire_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102996000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I click on the Individual And Family button a Page should dropdown",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_Individual_And_Family_button_a_Page_should_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 97851000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on HealthInsurance the page should display properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_HealthInsurance_the_page_should_display_properly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10005717000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the page should wait for 10 sec for the page to display properly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 25
+                }
+              ],
+              "location": "step_definitions.HomePage_StepDefinition.the_page_should_wait_for_sec_for_the_page_to_display_properly(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"txtUsername\"]\"}\n  (Session info: chrome\u003d83.0.4103.116)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Salahs-MBP.home\u0027, ip: \u0027fd4b:8d38:69ba:1:a8c8:c861:7ff1:3635%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.5\u0027, java.version: \u002711.0.6\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/pm/vhs96q256t9...}, goog:chromeOptions: {debuggerAddress: localhost:60079}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: b76ff4a4e14ca0ef634a1b233a048642\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"txtUsername\"]}\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat step_definitions.HomePage_StepDefinition.i_will_enter_my_user_name_in_the_username_box_it_should_be_entered_properly(HomePage_StepDefinition.java:81)\n\tat ✽.I will enter my user name in the username box it should be entered properly(file:///Users/salahmouloudi/IdeaProjects/BDD_Selenium_Automation_Framework_Team4/Empire/src/main/java/features/HomePage.feature:25)\n",
+              "duration": 10039367000,
+              "status": "failed"
+            },
+            "line": 25,
+            "name": "I will enter my user name in the username box it should be entered properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_will_enter_my_user_name_in_the_username_box_it_should_be_entered_properly()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 432000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I will enter my PassWord in the PassWord box it should be entered properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_will_enter_my_PassWord_in_the_PassWord_box_it_should_be_entered_properly()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-24T02:05:20.464Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6013812000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "",
+        "description": "",
+        "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 32624000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 311000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I am at Empire home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_Empire_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 84746000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I click on the Individual And Family button a Page should dropdown",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_Individual_And_Family_button_a_Page_should_dropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74766000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I click on VisionInsurance button the page should display properly",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_VisionInsurance_button_the_page_should_display_properly()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217905000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "the VisionInsurance page should be refreshed",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.the_VisionInsurance_page_should_be_refreshed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6425000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the VisionInsurance page should be scrolled down to the end",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.the_VisionInsurance_page_should_be_scrolled_down_to_the_end()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94333000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "the page should be closed",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.the_page_should_be_closed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/features/HomePage.feature",
+    "tags": []
+  }
+]
