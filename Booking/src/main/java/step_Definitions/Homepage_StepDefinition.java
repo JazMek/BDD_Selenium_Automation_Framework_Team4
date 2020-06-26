@@ -19,7 +19,6 @@ public void openBrowser() throws IOException { setUp(false, "browserstack", "win
     static BookingWebElements bookingWebElements;
     static HomePage homePage;
     public static void init() {
-
         bookingWebElements = PageFactory.initElements(driver, BookingWebElements.class);
         homePage = PageFactory.initElements(driver, HomePage.class);
     }
