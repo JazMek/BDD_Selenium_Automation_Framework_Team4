@@ -17,7 +17,7 @@ public class HomePage_StepDefinition extends WebAPI {
     public void openBrowser() throws IOException { setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.Netflix.com/");
     }
     @After
-    public void closeBrowser() { driver.quit(); driver.close(); }
+    public void closeBrowser() { driver.quit(); }
     static HomePage homePage;
     static NetflixWebElements netflixWebElements;
     public static void init() {

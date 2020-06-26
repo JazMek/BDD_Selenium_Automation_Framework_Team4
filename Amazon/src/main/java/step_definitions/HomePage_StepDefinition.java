@@ -23,7 +23,8 @@ public class HomePage_StepDefinition extends WebAPI {
          amazonWebElements= PageFactory.initElements(driver,AmazonWebElements.class);
         homePage_stepDefinition=PageFactory.initElements(driver,HomePage_StepDefinition.class); 
     }
-    @Given("I am at Amazon home page")
+    
+    @Given("I am at Amazon home page") //LAMARAs
     public void i_am_at_Amazon_home_page() {
       init();
     }
@@ -32,58 +33,58 @@ public class HomePage_StepDefinition extends WebAPI {
         init();
         signin.click();
     }
-    @When("I enter my  correct email")
+    @When("I enter my  correct email")//LAMARAs
     public void i_enter_my_correct_email() {
         init();
         userNameField.sendKeys("team4WDNY2020@gmail.com");
     }
-    @Then("I click on continue button")
+    @Then("I click on continue button")//LAMARAs
     public void i_click_on_continue_button() {
         init();
         continueButton.click();
     }
-    @Then("I enter my pass word")
+    @Then("I enter my pass word")//LAMARAs
     public void i_enter_my_pass_word() {
         init();
         passWordField.sendKeys("Team42020");
     }
-    @Then("I click on the login button I should load in the my Amazon account")
+    @Then("I click on the login button I should load in the my Amazon account") //LAMARAs
     public void i_click_on_the_login_button_I_should_load_in_the_my_Amazon_account() {
         init();
         loginButton.click();
     }
-    @When("I click on the Best Sellers button")
+    @When("I click on the Best Sellers button") //LAMARAs
     public void i_click_on_the_Best_Sellers_button() {
         init();
         ClickBestSellers.click();
     }
-    @Then("I can verify Best Sellers Url")
+    @Then("I can verify Best Sellers Url") //LAMARAs
     public void i_can_verify_Best_Sellers_Url() {
         init();
         driver.getCurrentUrl();
         Assert.assertEquals(ExpectedUrl,driver.getCurrentUrl()); 
     }
-    @When("i Click on Books")
+    @When("i Click on Books") //LAMARAs
     public void i_Click_on_Books() {
         ClickBooks.click();
     }
-    @Then("I Verify Books Url")
+    @Then("I Verify Books Url") //LAMARAs
     public void i_Verify_Books_Url() {
         Assert.assertEquals(ExpectedUrl1,driver.getCurrentUrl());
     }
-    @Then("I can chose the best book")
+    @Then("I can chose the best book") //LAMARAs
     public void i_can_chose_the_best_book() {
         ChooseTheBestBook.click();
     }
-    @Then("I can Select PaperBack Format for the best book")
+    @Then("I can Select PaperBack Format for the best book") //LAMARAs
     public void i_can_Select_PaperBack_Format_for_the_best_book() {
         SelectPaperBackFormat.click();
     }
-    @Then("I can Add my Book To the shopping Cart")
+    @Then("I can Add my Book To the shopping Cart") //LAMARAs
     public void i_can_Add_my_Book_To_the_shopping_Cart() {
         AddToCart.click();
     }
-    @Given("I Enter Hand sanitizer in search input field")
+    @Given("I Enter Hand sanitizer in search input field") //LAMARAs
     public void i_Enter_Hand_sanitizer_in_search_input_field() {
    
     }

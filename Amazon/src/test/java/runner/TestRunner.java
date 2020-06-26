@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
         plugin ={"pretty","json:target/cucumber-reports/cucumber.json","html:target/cucumber-reports"},
         strict=true,
         monochrome=true,
-        dryRun=false,
-        tags="@SmokeTest"
+        dryRun=false
+        //tags="@SmokeTest"
 //        tags="@Regression"
 //        tags="@pending"
 // tags = " (@SmokeTest or @Regression) and not @pending"

@@ -17,7 +17,7 @@ public class HomePage_StepDefinition extends WebAPI {
     public void openBrowser() throws IOException { setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.booking.com/");
     }
     @After
-    public void closeBrowser() { driver.quit();driver.close(); }
+    public void closeBrowser() { driver.quit(); }
     static HomePage_StepDefinition homePage_stepDefinition;
     static BookingWebElements bookingWebElements;
     public static void init() {
