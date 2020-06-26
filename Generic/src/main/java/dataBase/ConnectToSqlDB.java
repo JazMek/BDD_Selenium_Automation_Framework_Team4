@@ -238,4 +238,38 @@ public class ConnectToSqlDB {
             System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
         }
     }
+    public static List<Airlines> readUnitedAirLinesProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException {
+        List<Airlines> list = new ArrayList<>();
+        Airlines user = null;
+        try{
+            Connection conn = connectToSqlDatabase();
+            String query = "SELECT * FROM United";
+            // create the java statement
+            Statement st = conn.createStatement();
+            // execute the query, and get a java resultset
+            ResultSet rs = st.executeQuery(query);
+            // iterate through the java resultset
+            while (rs.next())
+            {
+                String location= rs.getString("From");
+                String destination = rs.getString("to");
+
+                //System.out.format("%s, %s\n", name, id);
+                user = new Airlines(location,destination);
+                list.add(user);
+
+            }
+            st.close();
+        }catch (Exception e){
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
+        return list;
+    }
+    public static void main(String[][] args)throws IOException, SQLException, ClassNotFoundException {
+        List<Airlines> list = readUnitedAirLinesProfileFromSqlTable();
+        for(Airlines user:list){
+            System.out.println(user.getFrom() + " " + user.getTo());
+        }
+    }
 }

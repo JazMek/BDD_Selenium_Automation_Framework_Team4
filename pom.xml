@@ -3,12 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
 
-    </properties>
     <groupId>us.piit</groupId>
     <artifactId>BDD_Selenium_Automation_Framework_Team4</artifactId>
     <packaging>pom</packaging>
@@ -25,6 +20,11 @@
         <module>TD_Bank</module>
     </modules>
 <!--    <dependencyManagement>-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+    </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -112,8 +112,6 @@
             <version>13.0.0</version>
         </dependency>
 
-
-
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
         <groupId>org.apache.commons</groupId>
@@ -140,6 +138,21 @@
         <artifactId>poi</artifactId>
         <version>4.1.2</version>
     </dependency>
+
+        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 <!--    </dependencyManagement>-->
 
