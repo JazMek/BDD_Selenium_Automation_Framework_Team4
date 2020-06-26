@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70149edd-e4d2-4869-879c-02a900c40d90" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="70149edd-e4d2-4869-879c-02a900c40d90" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,34 +219,34 @@
       <screen x="0" y="0" width="1344" height="840" />
     </state>
     <state x="409" y="173" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1344.840@0.0.1344.840" timestamp="1592798465558" />
-    <state width="1300" height="224" key="GridCell.Tab.0.bottom" timestamp="1593145858394">
+    <state width="1300" height="224" key="GridCell.Tab.0.bottom" timestamp="1593150645306">
       <screen x="0" y="0" width="1344" height="840" />
     </state>
-    <state width="1300" height="224" key="GridCell.Tab.0.bottom/0.0.1344.840@0.0.1344.840" timestamp="1593145858394" />
+    <state width="1300" height="224" key="GridCell.Tab.0.bottom/0.0.1344.840@0.0.1344.840" timestamp="1593150645306" />
     <state width="1300" height="192" key="GridCell.Tab.0.bottom/0.23.1344.765@0.23.1344.765" timestamp="1592558828637" />
     <state width="1300" height="193" key="GridCell.Tab.0.bottom/0.23.1344.766@0.23.1344.766" timestamp="1592554826685" />
-    <state width="1300" height="224" key="GridCell.Tab.0.center" timestamp="1593145858392">
+    <state width="1300" height="224" key="GridCell.Tab.0.center" timestamp="1593150645305">
       <screen x="0" y="0" width="1344" height="840" />
     </state>
-    <state width="1300" height="224" key="GridCell.Tab.0.center/0.0.1344.840@0.0.1344.840" timestamp="1593145858392" />
+    <state width="1300" height="224" key="GridCell.Tab.0.center/0.0.1344.840@0.0.1344.840" timestamp="1593150645305" />
     <state width="1300" height="192" key="GridCell.Tab.0.center/0.23.1344.765@0.23.1344.765" timestamp="1592558828636" />
     <state width="1300" height="193" key="GridCell.Tab.0.center/0.23.1344.766@0.23.1344.766" timestamp="1592554826685" />
-    <state width="1300" height="224" key="GridCell.Tab.0.left" timestamp="1593145858391">
+    <state width="1300" height="224" key="GridCell.Tab.0.left" timestamp="1593150645304">
       <screen x="0" y="0" width="1344" height="840" />
     </state>
-    <state width="1300" height="224" key="GridCell.Tab.0.left/0.0.1344.840@0.0.1344.840" timestamp="1593145858391" />
+    <state width="1300" height="224" key="GridCell.Tab.0.left/0.0.1344.840@0.0.1344.840" timestamp="1593150645304" />
     <state width="1300" height="192" key="GridCell.Tab.0.left/0.23.1344.765@0.23.1344.765" timestamp="1592558828636" />
     <state width="1300" height="193" key="GridCell.Tab.0.left/0.23.1344.766@0.23.1344.766" timestamp="1592554826684" />
-    <state width="1300" height="224" key="GridCell.Tab.0.right" timestamp="1593145858392">
+    <state width="1300" height="224" key="GridCell.Tab.0.right" timestamp="1593150645305">
       <screen x="0" y="0" width="1344" height="840" />
     </state>
-    <state width="1300" height="224" key="GridCell.Tab.0.right/0.0.1344.840@0.0.1344.840" timestamp="1593145858392" />
+    <state width="1300" height="224" key="GridCell.Tab.0.right/0.0.1344.840@0.0.1344.840" timestamp="1593150645305" />
     <state width="1300" height="192" key="GridCell.Tab.0.right/0.23.1344.765@0.23.1344.765" timestamp="1592558828637" />
     <state width="1300" height="193" key="GridCell.Tab.0.right/0.23.1344.766@0.23.1344.766" timestamp="1592554826685" />
-    <state x="259" y="161" key="IDE.errors.dialog" timestamp="1593148971823">
+    <state x="259" y="161" key="IDE.errors.dialog" timestamp="1593150672766">
       <screen x="0" y="0" width="1344" height="840" />
     </state>
-    <state x="259" y="161" key="IDE.errors.dialog/0.0.1344.840@0.0.1344.840" timestamp="1593148971823" />
+    <state x="259" y="161" key="IDE.errors.dialog/0.0.1344.840@0.0.1344.840" timestamp="1593150672766" />
     <state x="209" y="81" key="Maven.ArtifactSearchDialog" timestamp="1592959605504">
       <screen x="0" y="0" width="1344" height="840" />
     </state>
