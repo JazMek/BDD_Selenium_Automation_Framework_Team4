@@ -522,6 +522,12 @@ public class WebAPI {
         String text = webElement.getText();
         return text;
     }
-
-
+    public String getPageTitle(WebDriver driver) {
+        String PageTitle = driver.getTitle();
+        return PageTitle;
+    }
+    public String getPageUrl(WebDriver driver) {
+        String PageTitle = driver.getCurrentUrl();
+        return PageTitle;
+    }
 }

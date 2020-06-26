@@ -3,14 +3,215 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-20T01:54:28.999Z",
         "line": 3,
         "name": "",
         "description": "",
-        "id": ";",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 913000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at geico home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_geico_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T04:42:35.898Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1772793000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Test homepage Title",
+        "description": "",
+        "id": ";test-homepage-title",
+        "after": [
+          {
+            "result": {
+              "duration": 81423000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
-        "steps": []
+        "steps": [
+          {
+            "result": {
+              "duration": 967000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am at geico home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_geico_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5722000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Land on the home page I will check if I land in the correct page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_Land_on_the_home_page_I_will_check_if_I_land_in_the_correct_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 433000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at geico home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_geico_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T04:42:37.798Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1456465000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Test homepage url",
+        "description": "",
+        "id": ";test-homepage-url",
+        "after": [
+          {
+            "result": {
+              "duration": 83255000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4282000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Land on the home page I will check if the link url is derecting me to the right page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_Land_on_the_home_page_I_will_check_if_the_link_url_is_derecting_me_to_the_right_page()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 436000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at geico home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_geico_home_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-26T04:42:39.346Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1294443000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Test text is present in the home page",
+        "description": "",
+        "id": ";test-text-is-present-in-the-home-page",
+        "after": [
+          {
+            "result": {
+              "duration": 85456000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[More than just car insurance]\u003e but was:\u003c[]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat home.HomePage.land_in_the_home_page_I_should_see_the_text(HomePage.java:25)\n\tat step_definitions.HomePage_StepDefinition.i_land_in_the_home_page_I_should_see_the_text(HomePage_StepDefinition.java:50)\n\tat ✽.I land in the home page I should see the text(file:///Users/karimmekdoud/IdeaProjects/BDD_Selenium_Automation_Framework_Team4/Geico/src/main/java/features/HomePage.feature:13)\n",
+              "duration": 59351000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I land in the home page I should see the text",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_land_in_the_home_page_I_should_see_the_text()"
+            },
+            "keyword": "When "
+          }
+        ]
       }
     ],
     "name": "",

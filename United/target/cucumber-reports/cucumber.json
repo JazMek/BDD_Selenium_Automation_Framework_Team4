@@ -3,14 +3,266 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-20T01:54:26.488Z",
+        "start_timestamp": "2020-06-24T06:53:45.241Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3484705000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
         "line": 3,
         "name": "",
         "description": "",
         "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 100039000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
-        "steps": []
+        "steps": [
+          {
+            "result": {
+              "duration": 742000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at United home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_United_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 178919000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the BookLink",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_BookLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 115361000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the checkBoxOneWay",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_checkBoxOneWay()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 128658000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the FromTextField",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_FromTextField()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94765000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the FromTextField_ClearButton",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_FromTextField_ClearButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "io.cucumber.core.exception.CucumberException: Could not invoke step [I enter the value {string} on FromTextField] defined at \u0027step_definitions.HomePage_StepDefinition.i_enter_the_value_on_FromTextField(dataBase.UnitedList)\u0027.\nIt appears there was a problem with the step definition.\nThe converted arguments types were (java.lang.String)\n\nThe details are in the stacktrace below.\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.couldNotInvokeStep(PickleStepDefinitionMatch.java:81)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:65)\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:67)\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:230)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:58)\nCaused by: io.cucumber.core.backend.CucumberBackendException: Failed to invoke public void step_definitions.HomePage_StepDefinition.i_enter_the_value_on_FromTextField(dataBase.UnitedList)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:29)\n\tat io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)\n\t... 30 more\nCaused by: java.lang.IllegalArgumentException: argument type mismatch\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:567)\n\tat io.cucumber.java.Invoker.invoke(Invoker.java:27)\n\t... 32 more\n",
+              "duration": 1555000,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "I enter the value \"user1\" on FromTextField",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user1\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step_definitions.HomePage_StepDefinition.i_enter_the_value_on_FromTextField(dataBase.UnitedList)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 467000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I enter the value \"user1\" on ToTextField",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user1\"",
+                  "offset": 18
+                }
+              ],
+              "location": "step_definitions.HomePage_StepDefinition.i_enter_the_value_on_ToTextField(dataBase.UnitedList)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 400000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I click on DepartDateLink",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_DepartDateLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 381000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "I click on Month_ClickBtn1",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Month_ClickBtn1()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 364000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I click on DepartDate",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_DepartDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 465000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I click on TravelersPassengers",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_TravelersPassengers()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "I click on Adults",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Adults()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 367000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "I click on Seniors",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Seniors()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 402000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "I click on Children",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Children()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 375000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "I click on Children",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Children()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 469000,
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "I click on exitButton",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_exitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 371000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "I click on Find_flightsButton",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_Find_flightsButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 396000,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "navigate bacward",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.navigate_bacward()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
     "name": "",

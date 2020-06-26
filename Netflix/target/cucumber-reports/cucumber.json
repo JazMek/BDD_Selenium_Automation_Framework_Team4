@@ -3,14 +3,109 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-06-20T01:54:30.146Z",
+        "start_timestamp": "2020-06-24T07:24:09.939Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2254190000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.openBrowser()"
+            }
+          }
+        ],
         "line": 3,
         "name": "",
         "description": "",
         "id": ";",
+        "after": [
+          {
+            "result": {
+              "duration": 90171000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.closeBrowser()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
-        "steps": []
+        "steps": [
+          {
+            "result": {
+              "duration": 922000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am at netflix home page",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_am_at_netflix_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 863509000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on the signin button",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171036000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter my  correct email \"email\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"email\"",
+                  "offset": 26
+                }
+              ],
+              "location": "step_definitions.HomePage_StepDefinition.i_enter_my_correct_email(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114011000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter my pass word \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"password\"",
+                  "offset": 21
+                }
+              ],
+              "location": "step_definitions.HomePage_StepDefinition.i_enter_my_pass_word(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69921000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on the scond signin button",
+            "match": {
+              "location": "step_definitions.HomePage_StepDefinition.i_click_on_the_scond_signin_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
     "name": "",
