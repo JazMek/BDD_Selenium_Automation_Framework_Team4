@@ -1,53 +1,73 @@
-package step_definitions;
-import common.WebAPI;
+package step_Definitions;
 
+import common.WebAPI;
+import home.HomePage;
+import home.NetflixWebElement;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.support.PageFactory;
 
 import java.io.IOException;
 
-import static home.HomePage.homePage;
-import static home.HomePage.init;
-
-public class HomePage_StepDefinition extends WebAPI {
+public class Homepage_StepDefinition extends WebAPI {
 
 
-public class HomePage_StepDefinition extends WebAPI {
+
     @Before
-
-    public void openBrowser() throws IOException { setUp(false, "browserstack", "ox", "catalina", "chrome", "83", "https://www.netflix.com/");
+    public void openBrowser() throws IOException { setUp(false, "browserstack", "windows", "10", "chrome", "83", "https://www.netflix.com/");
         init();
-
     }
     @After
     public void closeBrowser() { driver.quit(); }
+    static NetflixWebElement netflixWebElement;
+    static HomePage homePage;
+    public static void init() {
+
+        netflixWebElement = PageFactory.initElements(driver, NetflixWebElement.class);
+        homePage = PageFactory.initElements(driver, HomePage.class);
+    }
+
 
     @Given("I am at netflix home page")
-    public void i_am_at_netflix_home_page() {
+    public void i_am_at_geico_home_page() {
 
     }
-    @When("I click on the signin button")
-    public void i_click_on_the_signin_button() {
-        homePage.click_on_the_signin_button();
-    }
-    @When("I enter my  correct email {string}")
-    public void i_enter_my_correct_email(String string) {
-        homePage.enter_my_correct_email(string);
+
+    @When("I should check broken links")
+    public void i_should_check_broken_links() throws IOException {
+        init();
+        homePage.CheckBrokenLink();
     }
 
-    @When("I enter my pass word {string}")
-    public void i_enter_my_pass_word(String string) {
-        homePage.enter_my_pass_word(string);
+    //senario 03
+    @When("I should get all page links")
+    public void i_should_get_all_page_links() {
+        PageLinksList(driver);
     }
 
-    @Then("I click on the scond signin button")
-    public void i_click_on_the_scond_signin_button() {
-        homePage.click_on_the_scond_signin_button();
+   // scenario 03
+   @Then("I click on sign in Button")
+   public void i_click_on_sign_in_Button() {
+homePage.click_on_sign_in_Button();
+   }
+
+    @Then("I enter user name in userNameField")
+    public void i_enter_user_name_in_userNameField() {
+        homePage.enter_user_name_in_userNameField();
     }
 
+    @Then("I enter password in the  passWordField")
+    public void i_enter_password_in_the_passWordField() {
+        homePage.enter_password_in_the_passWordField();
+    }
+
+    @When("i click on signin button i login my account")
+    public void i_click_on_signin_button_i_login_my_account() {
+homePage.click_on_signin_button_i_login_my_account();
+    }
 
 
 
