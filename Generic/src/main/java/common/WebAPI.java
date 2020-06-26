@@ -449,6 +449,16 @@ public class WebAPI {
         return text;
     }
 
+    public String getPageTitle(WebDriver driver) {
+        String PageTitle = driver.getTitle();
+        return PageTitle;
+    }
+    public String getPageUrl(WebDriver driver) {
+        String PageTitle = driver.getCurrentUrl();
+        return PageTitle;
+    }
+
+
     //***** Method to get Page Links List ***************
     public static List<WebElement> PageLinksList(WebDriver driver){
         List<WebElement> linkslist = driver.findElements(By.tagName("a"));

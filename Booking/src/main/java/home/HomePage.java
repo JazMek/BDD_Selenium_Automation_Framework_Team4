@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 import static home.BookingWebElements.*;
 
 public class HomePage extends WebAPI {
+
     public void click_on_the_signin_button() {
         signinButton2.click();
     }
@@ -23,6 +24,7 @@ public class HomePage extends WebAPI {
     public void click_on_the_login_button_I_should_load_in_my_booking_account() {
         loginButton.click();
     }
+
     // method for page broken links
     public void CheckBrokenLink() throws IOException {
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
@@ -35,7 +37,7 @@ public class HomePage extends WebAPI {
 
 
     }
-    // step2  signUp click
+
     public void click_on_signUp_button() {
         signUp.click();
 

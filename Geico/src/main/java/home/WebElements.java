@@ -1,11 +1,22 @@
 package home;
 
+import common.WebAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import step_definitions.HomePage_StepDefinition;
 
-public class WebElements {
+public class WebElements extends WebAPI {
+    HomePage_StepDefinition homePage_stepDefinition ;
+    WebElements webElements;
+    HomePage homePage;
 
+    public void init(){
+      homePage = PageFactory.initElements(driver,HomePage.class);
+      webElements =PageFactory.initElements(driver,WebElements.class);
+      homePage_stepDefinition=PageFactory.initElements(driver, HomePage_StepDefinition.class);
+  }
 
     //    WebElements
     public static final String userNameFieldXP =" //input[@id='ap_email']";
@@ -20,9 +31,9 @@ public class WebElements {
     public static final String loginButtonID="signInSubmit";
     @FindBy(how=How.ID,using=loginButtonID)
     public static WebElement loginButton;
-    public static final String signinCSS ="#nav-link-accountList > div > span";
-    @FindBy(how=How.CSS,using=signinCSS)
-    public static WebElement signin;
+    public static final String TextExpectedCSS ="#section1heading";
+    @FindBy(how=How.CSS,using=TextExpectedCSS)
+    public static WebElement TextExpected;
 
 
 }
