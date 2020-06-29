@@ -1,7 +1,5 @@
 package dataBase;
 
-import org.openqa.selenium.By;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,15 +21,8 @@ public class ConnectToSqlDB {
     public static Properties loadProperties() throws IOException {
         Properties prop = new Properties();
         //InputStream ism = new FileInputStream("/secret.properties");
-
-        InputStream ism = new FileInputStream("/Users/karimmekdoud/IdeaProjects/Selenium_Automation_Framework_Team4/Generic/src/main/java/secret.properties");
-
-
-        InputStream ism = new FileInputStream("C:\\Users\\ssbra\\IdeaProjects\\BDD_Selenium_Automation_Framework_Team4\\Generic\\secret.properties");
-
         //InputStream ism = new FileInputStream("../Generic/src/main/secret.properties");
         InputStream ism = new FileInputStream("C:\\Users\\lamar\\IdeaProjects\\BDD_Selenium_Automation_Framework_Team4\\Generic\\secret.properties");
-
         prop.load(ism);
         ism.close();
         return prop;
@@ -217,7 +208,7 @@ public class ConnectToSqlDB {
         User user = null;
         try{
             Connection conn = connectToSqlDatabase();
-            String query = "SELECT * FROM  sprintsearchitem";
+            String query = "SELECT * FROM Students";
             // create the java statement
             Statement st = conn.createStatement();
             // execute the query, and get a java resultset
@@ -225,12 +216,11 @@ public class ConnectToSqlDB {
             // iterate through the java resultset
             while (rs.next())
             {
-//                String name = rs.getString("stName");
-//                String id = rs.getString("stID");
-//                String dob = rs.getString("stDOB");
-                String itm = rs.getString("item");
+                String name = rs.getString("stName");
+                String id = rs.getString("stID");
+                String dob = rs.getString("stDOB");
                 //System.out.format("%s, %s\n", name, id);
-                user = new User(itm);
+                user = new User(name,id, dob);
                 list.add(user);
 
             }
@@ -242,86 +232,44 @@ public class ConnectToSqlDB {
         return list;
     }
 
-//    public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
-//        List<User> list = readUserProfileFromSqlTable();
-//        for(User user:list){
-//            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
-//        }
-//    }
-
-
-    public static List<UnitedList> getUnitedListFromSqlTable()throws IOException, SQLException, ClassNotFoundException {
-        List<UnitedList> list = new ArrayList<>();
-        UnitedList user = null;
-        try{
-            Connection conn = connectToSqlDatabase();
-            String query = "SELECT * FROM UnitedTable";
-            // create the java statement
-            Statement st = conn.createStatement();
-            // execute the query, and get a java resultset
-            ResultSet rs = st.executeQuery(query);
-            // iterate through the java resultset
-            while (rs.next())
-            {
-                String from = rs.getString("from");
-                String to = rs.getString("to");
-                String month = rs.getString("month");
-                String Adults = rs.getString("Adults(18-64)");
-                String Seniors= rs.getString("Seniors(65+)");
-                String Children1= rs.getString("Children(15-17)");
-                String Children2= rs.getString("Children(12-14)");
-                user= new UnitedList(from ,to, month,Adults,Seniors,Children1,Children2);
-                list.add(user);
-
-            }
-            st.close();
-        }catch (Exception e){
-            System.err.println("Got an exception! ");
-            System.err.println(e.getMessage());
-        }
-        return list;
-    }
-//karim method
-
-
-    public static List<UnitedList> getUnitedListFromSqlTableArry()throws IOException, SQLException, ClassNotFoundException {
-        List<UnitedList> list = new ArrayList<>();
-        UnitedList user1 = null;
-        try{
-            Connection conn = connectToSqlDatabase();
-            String query = "SELECT * FROM UnitedTable";
-            // create the java statement
-            Statement st = conn.createStatement();
-            // execute the query, and get a java resultset
-            ResultSet rs = st.executeQuery(query);
-            // iterate through the java resultset
-            while (rs.next())
-            {
-                String from1 = rs.getString("from");
-                String to1 = rs.getString("to");
-                int month1 = rs.getInt("month");
-                int Adults1 = rs.getInt("Adults(18-64)");
-                int Seniors1= rs.getInt("Seniors(65+)");
-                int Children11= rs.getInt("Children(15-17)");
-                int Children21= rs.getInt("Children(12-14)");
-                user1= new UnitedList(from1 ,to1, month1,Adults1,Seniors1,Children11,Children21);
-                list.add(user1);
-
-            }
-            st.close();
-        }catch (Exception e){
-            System.err.println("Got an exception! ");
-            System.err.println(e.getMessage());
-        }
-        return list;
-    }
     public static void main(String[] args)throws IOException, SQLException, ClassNotFoundException {
-        List<UnitedList> list = getUnitedListFromSqlTable();
-        for(UnitedList user :list){
-            System.out.println(user.getFrom() + " " + user.getTo()+ " " + user.getMonth()+ " " + user.getAdults() + " " + user.getSeniors()+ " " + user.getChildren1()+ " " + user.getChildren2());
+        List<User> list = readUserProfileFromSqlTable();
+        for(User user:list){
+            System.out.println(user.getStName() + " " + user.getStID()+ " " + user.getStDOB());
         }
     }
+    public static List<Airlines> readUnitedAirLinesProfileFromSqlTable()throws IOException, SQLException, ClassNotFoundException {
+        List<Airlines> list = new ArrayList<>();
+        Airlines user = null;
+        try{
+            Connection conn = connectToSqlDatabase();
+            String query = "SELECT * FROM United";
+            // create the java statement
+            Statement st = conn.createStatement();
+            // execute the query, and get a java resultset
+            ResultSet rs = st.executeQuery(query);
+            // iterate through the java resultset
+            while (rs.next())
+            {
+                String location= rs.getString("From");
+                String destination = rs.getString("to");
 
+                //System.out.format("%s, %s\n", name, id);
+                user = new Airlines(location,destination);
+                list.add(user);
 
-
+            }
+            st.close();
+        }catch (Exception e){
+            System.err.println("Got an exception! ");
+            System.err.println(e.getMessage());
+        }
+        return list;
+    }
+    public static void main(String[][] args)throws IOException, SQLException, ClassNotFoundException {
+        List<Airlines> list = readUnitedAirLinesProfileFromSqlTable();
+        for(Airlines user:list){
+            System.out.println(user.getFrom() + " " + user.getTo());
+        }
+    }
 }

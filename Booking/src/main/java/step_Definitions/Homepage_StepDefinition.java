@@ -1,3 +1,4 @@
+
 package step_Definitions;
 import common.WebAPI;
 import home.BookingWebElements;
@@ -97,4 +98,20 @@ homePage.reenter_password_data_in_text_box();
     public void i_should_create_a_new_account_by_clicking_enter_button() {
 homePage.should_create_a_new_account_by_clicking_enter_button();
     }
+
+package step_definitions;
+
+
+
+import common.WebAPI;
+
+
+public class HomePage_StepDefinition extends WebAPI {
+
+
+
+
+
+
 }
+
