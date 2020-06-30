@@ -1,9 +1,8 @@
 package runner;
-
+//<<<<<<< HEAD:Generic/src/test/java/runner/TestRunner.java
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/main/java/features/HomePage.feature"},
@@ -13,9 +12,6 @@ import org.junit.runner.RunWith;
         monochrome=true,
         dryRun=false,
         tags=""
-
-
-
 // tags = " (@SmokeTest or @Regression) and not @pending"
 // tags = "(@SmokeTest or @Regression) and (not @pending)"
 // tags = {"@SmokeTest or @Regression and not @pending"}

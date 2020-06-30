@@ -91,5 +91,9 @@ When I should get all page links
   Scenario:medicaid page/ id page
     Given i am at medcaide page
     Then  i on  id button click i should open the  id page
-
-
+  Scenario:
+    When   I click on the sign in button
+    And    I enter my correct email
+    Then   I click on continue button
+    And    I enter my pass word
+    Then   I click on the login button I should log in to my Empire account

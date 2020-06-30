@@ -11,18 +11,13 @@ import java.io.IOException;
 import static home.TD_BankWebElement.*;
 public class HomePage_StepDefinition extends WebAPI {
     @Before
-    public void openBrowser() throws IOException {
-        setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.tdbank.com/");
+    public void openBrowser() throws IOException {setUp(false, "browserstack", "os", "x", "chrome", "83", "https://www.tdbank.com/");
     }
 
     @After
-    public void closeBrowser() {
-        driver.quit();
-    }
-
+    public void closeBrowser() {driver.quit();}
     static HomePage_StepDefinition homePage_stepDefinition;
     static TD_BankWebElement td_bankWebElement;
-
     public static void init() {
         homePage_stepDefinition = PageFactory.initElements(driver, HomePage_StepDefinition.class);
         td_bankWebElement = PageFactory.initElements(driver, TD_BankWebElement.class);
@@ -214,6 +209,38 @@ public class HomePage_StepDefinition extends WebAPI {
     public void i_click_on_SpecialOffers_i_should_see_the_page() {
         init();
         clickByXpath(SpecialOffersXP );
+    }
+
+}
+  
+    @Given("I am at TD_bank page")
+    public void i_am_at_TD_bank_page() {
+       
+    }
+
+    @When("I click on the signin button")
+    public void i_click_on_the_signin_button() {
+        
+    }
+
+    @When("I enter my  correct email")
+    public void i_enter_my_correct_email() {
+        
+    }
+
+    @Then("I click on continue button")
+    public void i_click_on_continue_button() {
+    
+    }
+
+    @Then("I enter my pass word")
+    public void i_enter_my_pass_word() {
+       
+    }
+
+    @Then("I click on the login button I should log in the my TD_bank account")
+    public void i_click_on_the_login_button_I_should_log_in_the_my_TD_bank_account() {
+       
     }
 
 }

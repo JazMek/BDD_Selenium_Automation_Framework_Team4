@@ -1,3 +1,4 @@
+
 Feature: 
 
   Background:
@@ -55,3 +56,11 @@ Feature:
     Then   I Type "NY" destination in a search box the it should show it out in the map
     When   I Click on the search button should look for the destination
     And    I select the second destination "chicago" it should link it to the first one
+
+  Scenario:
+    Given  I am at United page
+    When   I click on the signin button
+    And    I enter my  correct email
+    Then   I click on continue button
+    And    I enter my pass word
+    Then   I click on the login button I should log in the my United account

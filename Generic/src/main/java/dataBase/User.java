@@ -1,10 +1,9 @@
 package dataBase;
-
 public class User {
     String stName;
     String stID;
     String stDOB;
-
+     String item;
     public String getItem() {
         return item;
     }
@@ -13,15 +12,12 @@ public class User {
         this.item = item;
     }
 
-    String item;
     public User(){}
-
 
     public User(String item) {
         this.item = item;
     }
-
-
+ 
     public User(String stName, String stID){
         this.stName = stName;
         this.stID = stID;
@@ -55,4 +51,6 @@ public class User {
     public void setStDOB(String stDOB) {
         this.stDOB = stDOB;
     }
+   
+
 }

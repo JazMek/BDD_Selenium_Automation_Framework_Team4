@@ -65,7 +65,37 @@ public void i_am_at_United_airlines_Home_Page() {
 @When("I should check broken links")
 public void i_should_check_broken_links() throws IOException {
     homePage.CheckBrokenLink();
-}
+
+ @Given("I am at United page")
+    public void i_am_at_United_page() {
+        init();
+    }
+
+    @When("I click on the signin button")
+    public void i_click_on_the_signin_button() {
+        init();
+    }
+
+    @When("I enter my  correct email")
+    public void i_enter_my_correct_email() {
+        
+    }
+
+    @Then("I click on continue button")
+    public void i_click_on_continue_button() {
+     
+    }
+
+    @Then("I enter my pass word")
+    public void i_enter_my_pass_word() {
+        
+    }
+
+    @Then("I click on the login button I should log in the my United account")
+    public void i_click_on_the_login_button_I_should_log_in_the_my_United_account() {
+       
+    }
+
     //senario 03
     @When("I should get all page links")
     public void i_should_get_all_page_links() {

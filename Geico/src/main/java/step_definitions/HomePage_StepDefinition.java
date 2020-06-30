@@ -144,4 +144,34 @@ public class Homepage_StepDefinition  extends WebAPI {
         init();
         CheckZIPCood.sendKeys(ZipCood, Keys.ENTER);
     }
+    @Given("I am at Geico.com home page")
+    public void i_am_at_Geico_com_home_page() {
+  
+    }
+
+    @When("I click on the sign in button")
+    public void i_click_on_the_sign_in_button() {
+      
+    }
+
+    @When("I enter my correct email")
+    public void i_enter_my_correct_email() {
+    
+    }
+
+    @Then("I click on continue button")
+    public void i_click_on_continue_button() {
+       
+    }
+
+    @Then("I enter my pass word")
+    public void i_enter_my_pass_word() {
+      
+    }
+
+    @Then("I click on the login button I should log in to my Geico account")
+    public void i_click_on_the_login_button_I_should_log_in_to_my_Geico_account() {
+        
+    }
+
 }

@@ -1,5 +1,4 @@
 Feature:
-
  Background:
     Given I am at Booking home page
 
@@ -11,7 +10,6 @@ Feature:
     Then I click on the login button I should load in my booking account
 
   Scenario: 02- check the brooken links
-    Given I am at Booking home page
     When I should check broken links
 
   Scenario: 03- get all page links
@@ -85,3 +83,9 @@ Scenario: 04- register to booking account
     And I click on One Way Button it should get selected
     And the page should wait for 5 seconds
     Then it should get clean up
+  Scenario:
+    When   I click on the sign in button
+    And    I enter my correct email
+    Then   I click on continue button
+    And    I enter my pass word
+    Then   I click on the login button I should log in to my Booking.com account

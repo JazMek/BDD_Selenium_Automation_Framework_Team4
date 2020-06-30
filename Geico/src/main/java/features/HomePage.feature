@@ -1,6 +1,7 @@
 Feature:
   Background:
     Given  I am at geico home page
+
   Scenario:Test homepage Title
     When   I Land on the home page I will check if I land in the correct page
   Scenario: 01- check the Empire links
@@ -56,3 +57,9 @@ Feature:
       |12214|
       |12221|
       |11205|
+  Scenario:LAMARAs
+    When   I click on the sign in button
+    And    I enter my correct email
+    Then   I click on continue button
+    And    I enter my pass word
+    Then   I click on the login button I should log in to my Geico account

@@ -1,15 +1,14 @@
 package Home;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
 public class BookingWebElements {
-
     public static final String signinButtonXP="//*[@id='b_tt_holder_4']/div/span";
     public static final String signinButton2CSS= "#b2indexPage > div.fly-dropdown.fly-dropdown--onload-shower.fly-dropdown_bottom.fly-dropdown_arrow-right > div > div.header-signin-prompt__body > a > span";
     public static final String emailFieldXP ="//input[@id='username']";
@@ -62,9 +61,6 @@ public class BookingWebElements {
     public static final String registerPageCheckXPATH="//*[@id='profile-menu-trigger--content']/span/span[1]";
     @FindBy(how= How.XPATH,using=registerPageCheckXPATH)
     public static WebElement registerPageCheck;
-
-
-
     //*30182NY_Achour 2 *Logo in Home Page
     public static final String BookingLogoClassName="part_of_priceline_logo";
     @FindBy(how=How.CLASS_NAME,using =BookingLogoClassName)
@@ -93,5 +89,28 @@ public class BookingWebElements {
     public static final String MultiDestinationButtonCss = "#__next > div > div.sc-kUaPvJ.kicIIN > div.sc-ePZHVD.iTMarq.sc-kUaPvJ.kicIIN > div.sc-ePZHVD.iTMarq.sc-kUaPvJ.kicIIN > div > div > div.sc-kUaPvJ.iHCTyE > div > div.sc-kUaPvJ.etRPwA > form > div.sc-fONwsr.hSekvy.sc-kUaPvJ.cPSJgi > div:nth-child(3) > label > div > svg";
     public static final String DepartingFromXp = "//input[@name='flights.0.startLocation']";
     public static final String GoingToXP = "//*[@id=\"flight-arrival-airport0\"]";
+    //*************** Login to https://www.booking.com/ ***********************************************
+    public static final String signinButtonXP="//*[@id=\"username\"]";
+    @FindBy(how= How.XPATH,using=signinButtonXP)
+    public static WebElement signinButton;
 
+    public static final String signinButton2CSS= "#b2indexPage > div.fly-dropdown.fly-dropdown--onload-shower.fly-dropdown_bottom.fly-dropdown_arrow-right > div > div.header-signin-prompt__body > a > span";
+    @FindBy(how= How.CSS,using=signinButton2CSS)
+    public static WebElement signinButton2;
+
+    public static final String emailFieldXP ="//input[@id='username']";
+    @FindBy(how= How.XPATH,using=emailFieldXP)
+    public static WebElement emailField;
+
+    public static final String nextButtonXP=" //span[@class='bui-button__text']";
+    @FindBy(how= How.XPATH,using=nextButtonXP)
+    public static WebElement nextButton;
+
+    public static final String passWordFieldXP="//input[@id='password']";
+    @FindBy(how= How.XPATH,using=passWordFieldXP)
+    public static WebElement passWordField;
+    
+    public static final String loginButtonXP="//span[@class='bui-button__text']";
+    @FindBy(how= How.XPATH,using=loginButtonXP)
+    public static WebElement loginButton;
 }
