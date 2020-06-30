@@ -1,6 +1,4 @@
-
-
-Feature: Search Multiple flight
+Feature: 
 
   Background:
     Given I am at United airlines Home Page
@@ -20,16 +18,12 @@ Feature: Search Multiple flight
       |Miami MFL           |    Paris CDG|
 
   Scenario: 02- check the broken links
-    Given I am at United airlines Home Page
     When I should check broken links
 
   Scenario: 03- get all page links
-    Given I am at United airlines Home Page
     When I should get all page links
 
-Feature:
   Scenario:
-    Given  I am at United home page
     When   I click on the BookLink
     And    I click on the checkBoxOneWay
     And    I click on the FromTextField
@@ -47,7 +41,17 @@ Feature:
     And    I click on exitButton
     And    I click on Find_flightsButton
     Then   navigate bacward
+#  Scenario:
+#    When   I click on the Book button the Page should land properly
+#    And    I click on Route Map button the Map page should land properly
+#    Then   I click on Maximise button the Map page should maximise
+#    When   I click 5 times on zoom in button is should zoom
+#    And    I click on the Zoom out button it should zoom out
+#    Then   I click again on maximise button the page should minimise
 
-
-
-
+  Scenario:
+    When   I click on the Book button the Page should land properly
+    And    I click on Route Map button the Map page should land properly
+    Then   I Type "NY" destination in a search box the it should show it out in the map
+    When   I Click on the search button should look for the destination
+    And    I select the second destination "chicago" it should link it to the first one
